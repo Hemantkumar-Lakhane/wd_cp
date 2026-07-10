@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Cultural Department of the Government of India is dedicated to preserving, promoting, and celebrating India's rich and diverse cultural heritage, art, and traditions." />
   <title>Cultural Department - Government of India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -93,6 +97,16 @@
                 <i class="fas fa-calendar-alt"></i>
                 <h3>Festivals</h3>
                 <p>Organizing and promoting cultural festivals across the nation</p>
+            </div>
+            <div class="culture-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Literature</h3>
+                <p>Preserving and promoting India's vast and diverse literary heritage</p>
+            </div>
+            <div class="culture-card">
+                <i class="fas fa-film"></i>
+                <h3>Cinema & Media</h3>
+                <p>Celebrating the history and impact of Indian cinema globally</p>
             </div>
         </div>
     </section>
@@ -188,6 +202,34 @@
                     </div>
                 </div>
             </div>
+            <div class="initiative-card">
+                <div class="initiative-card-inner">
+                    <div class="initiative-front">
+                        <i class="fas fa-monument"></i>
+                        <h3>Monument Mitra</h3>
+                        <p>Adopt a heritage site for development</p>
+                    </div>
+                    <div class="initiative-back">
+                        <h3>Heritage Adoption</h3>
+                        <p>Corporate entities adopt heritage sites to provide better amenities and enhance the tourism experience.</p>
+                        <p>Ensuring sustainable maintenance of our historical monuments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="initiative-card">
+                <div class="initiative-card-inner">
+                    <div class="initiative-front">
+                        <i class="fas fa-om"></i>
+                        <h3>Spiritual Circuit</h3>
+                        <p>Connecting places of religious significance</p>
+                    </div>
+                    <div class="initiative-back">
+                        <h3>Cultural Tourism</h3>
+                        <p>Developing infrastructure around major spiritual and religious destinations.</p>
+                        <p>Promoting pilgrimage tourism and cultural understanding.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -201,41 +243,45 @@
     </div>
     <div class="gallery-container" id="gallery-container">
       <div class="gallery-container" id="gallery-container">
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Traditional_Dance" target="_blank" title="Traditional Dance">
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1723879867060-71f585cdba32?w=1200&auto=format&fit=crop&q=80', 'Traditional Dance', 'India has a rich tradition of classical and folk dances, each unique to its region.', 'https://en.wikipedia.org/wiki/Traditional_Dance')">
       <img src="https://images.unsplash.com/photo-1723879867060-71f585cdba32?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Traditional Dance" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Heritage_architecture" target="_blank" title="Heritage Architecture">
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1662101511535-7f5672bdf118?w=1200&auto=format&fit=crop&q=80', 'Heritage Architecture', 'Indian architecture encompasses a multitude of expressions over space and time.', 'https://en.wikipedia.org/wiki/Heritage_architecture')">
       <img src="https://images.unsplash.com/photo-1662101511535-7f5672bdf118?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Heritage Architecture" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Folk_art" target="_blank" title="Folk Art">
+  <div class="gallery-item" onclick="openLightbox('https://media.istockphoto.com/id/1193642393/photo/female-needlework-on-fabric-material-close-up-view-unidentified-tribal-women-sewing-ethnic.webp?a=1&b=1&s=2048x2048&w=0&k=20&c=N58514s06lB11jHDE_gL_nQJgY8b3K0K7X8Wp9yB7b8=', 'Folk Art', 'Folk art in India is deeply rooted in local traditions, rituals, and daily life.', 'https://en.wikipedia.org/wiki/Folk_art')">
       <img src="https://media.istockphoto.com/id/1193642393/photo/female-needlework-on-fabric-material-close-up-view-unidentified-tribal-women-sewing-ethnic.webp?a=1&b=1&s=612x612&w=0&k=20&c=krPFJyg5oLIDHiEjmbfHCnGQAtAG4nUfULXWEBBn_bs=" alt="Folk Art" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Musical_instrument" target="_blank" title="Musical Instruments">
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1677254112978-d7121217135e?w=1200&auto=format&fit=crop&q=80', 'Musical Instruments', 'Indian musical instruments have a rich history spanning thousands of years.', 'https://en.wikipedia.org/wiki/Musical_instrument')">
       <img src="https://images.unsplash.com/photo-1677254112978-d7121217135e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Musical Instruments" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Handicraft" target="_blank" title="Handicrafts">
-      <img src="https://images.unsplash.com/photo-1524314010015-136ee8ae1ab3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Handicrafts" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1524314010015-136ee8ae1ab3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0', 'Handicrafts', 'The crafts of India are diverse, rich in history, culture and religion.', 'https://en.wikipedia.org/wiki/Handicraft')">
+      <img src="https://images.unsplash.com/photo-1524314010015-136ee8ae1ab3?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Handicrafts" />
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
-  <div class="gallery-item">
-    <a href="https://en.wikipedia.org/wiki/Indian_festivals" target="_blank" title="Cultural Festival">
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1582095390960-e562b10f7cb8?w=1200&auto=format&fit=crop&q=80', 'Cultural Festival', 'Festivals in India are celebrated with much grandeur, colors, and enthusiasm.', 'https://en.wikipedia.org/wiki/Indian_festivals')">
       <img src="https://images.unsplash.com/photo-1582095390960-e562b10f7cb8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0" alt="Cultural Festival" />
-      <div class="gallery-overlay"><i class="fab fa-wikipedia-w"></i></div>
-    </a>
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&auto=format&fit=crop&q=80', 'Yoga & Wellness', 'Yoga is an ancient physical, mental and spiritual practice that originated in India.', 'https://en.wikipedia.org/wiki/Yoga')">
+      <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&auto=format&fit=crop&q=60" alt="Yoga & Wellness" />
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&auto=format&fit=crop&q=80', 'Indian Cuisine', 'Indian cuisine consists of a wide variety of regional and traditional cuisines native to the Indian subcontinent.', 'https://en.wikipedia.org/wiki/Indian_cuisine')">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&auto=format&fit=crop&q=60" alt="Indian Cuisine" />
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&auto=format&fit=crop&q=80', 'Classical Music', 'Indian classical music is the classical music of the Indian subcontinent.', 'https://en.wikipedia.org/wiki/Indian_classical_music')">
+      <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&auto=format&fit=crop&q=60" alt="Classical Music" />
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=1200&auto=format&fit=crop&q=80', 'Textiles & Weaving', 'Indian textiles have a rich heritage, with techniques like handloom weaving, dyeing, and embroidery passed down through generations.', 'https://en.wikipedia.org/wiki/Textiles_of_India')">
+      <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=600&auto=format&fit=crop&q=60" alt="Textiles & Weaving" />
+      <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
   </div>
 </div>
 
@@ -370,6 +416,19 @@
 <!-- Scroll to Top Button -->
   <div class="scroll-top" id="scroll-top">
     <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <!-- Gallery Lightbox -->
+  <div id="gallery-lightbox" class="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content-wrapper">
+      <img id="lightbox-img" src="" alt="Gallery Image">
+      <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+        <a id="lightbox-link" href="#" target="_blank" class="lightbox-btn">Read More</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>

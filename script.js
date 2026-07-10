@@ -104,3 +104,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// Lightbox Functionality
+function openLightbox(imageSrc, title, desc, linkUrl) {
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxDesc = document.getElementById('lightbox-desc');
+  const lightboxLink = document.getElementById('lightbox-link');
+
+  if (lightbox) {
+    lightboxImg.src = imageSrc;
+    lightboxTitle.textContent = title;
+    lightboxDesc.textContent = desc;
+    lightboxLink.href = linkUrl;
+
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when open
+  }
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('gallery-lightbox');
+  if (lightbox) {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+  }
+}
+
+// Close lightbox when clicking outside the content
+document.addEventListener('click', function(event) {
+  const lightbox = document.getElementById('gallery-lightbox');
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
